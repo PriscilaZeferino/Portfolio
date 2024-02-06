@@ -1,6 +1,6 @@
 /* color palette from <https://github.com/vuejs/theme> */
 :root {
-  --vt-c-white: #F0F0F5;
+  --vt-c-white: #f0f0f5;
   --vt-c-white-soft: #f8f8f8;
   --vt-c-white-mute: #f2f2f2;
 
@@ -9,12 +9,12 @@
   --vt-c-black-mute: #282828;
 
   --vt-c-indigo: #2c3e50;
-  
-  --vt-c-purple-dark: #2F195F;
-  --vt-c-purple-light: #7353BA;
 
-  --vt-c-pink-dark: #FF69B4;
-  --vt-c-pink-light: #FFD3E0;
+  --vt-c-purple-dark: #2f195f;
+  --vt-c-purple-light: #7353ba;
+
+  --vt-c-pink-dark: #ff69b4;
+  --vt-c-pink-light: #ffd3e0;
 
   --vt-c-divider-light-1: rgba(60, 60, 60, 0.29);
   --vt-c-divider-light-2: rgba(60, 60, 60, 0.12);
@@ -25,6 +25,8 @@
   --vt-c-text-light-2: rgba(60, 60, 60, 0.66);
   --vt-c-text-dark-1: var(--vt-c-white);
   --vt-c-text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --vt-c-hover: #2f195f;
 }
 
 /* semantic color variables for this project */
@@ -38,6 +40,14 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: var(--vt-c-text-light-1);
+
+  --color-primary: var(--vt-c-purple-light);
+  --color-secondary: var(--vt-c-purple-dark);
+
+  --color-text-button: var(--vt-c-white);
+  --color-burger: var(--vt-c-black);
+
+  --color-hover: var(--vt-c-hover);
 
   --section-gap: 160px;
 }
@@ -53,6 +63,14 @@
 
     --color-heading: var(--vt-c-text-dark-1);
     --color-text: var(--vt-c-text-dark-2);
+
+    --color-primary: var(--vt-c-pink-light);
+    --color-secondary: var(--vt-c-pink-dark);
+
+    --color-text-button: var(--vt-c-black);
+    --color-burger: var(--vt-c-white);
+
+    --color-hover: var(--vt-c-hover);
   }
 }
 

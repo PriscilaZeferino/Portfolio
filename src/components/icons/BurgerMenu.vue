@@ -21,7 +21,7 @@ defineProps({
   display: block;
   width: 30px;
   height: 3px;
-  background-color: #000;
+  background-color: var(--color-burger);
   margin-top: 5px;
 }
 

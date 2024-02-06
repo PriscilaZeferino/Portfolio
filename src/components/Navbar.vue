@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import Logo from '../components/icons/Logo.vue'
-import BurgerMenu from './icons/BurgerMenu.vue';
+import BurgerMenu from './icons/BurgerMenu.vue'
 
 const showMenu = ref(true)
 
@@ -32,26 +32,24 @@ onUnmounted(() => {
   <nav class="nav">
     <div class="navbar-mobile">
       <Logo />
-      <button  class="hamburger-button" :class="{ isActive: showMenu }" @click="openMenu">
-        <BurgerMenu :isActive="!showMenu"/>
+      <button class="hamburger-button" :class="{ isActive: showMenu }" @click="openMenu">
+        <BurgerMenu :isActive="!showMenu" />
       </button>
     </div>
     <div class="navbar-list" :class="{ showMenu: showMenu }">
       <ul class="nav-items">
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Serviços</a></li>
+        <li><a href="#home">Inicio</a></li>
+        <li><a href="#aboutme">Sobre mim</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#services">Serviços</a></li>
       </ul>
     </div>
-    <div class="toggleTheme">
-
-    </div>
+    <div class="toggleTheme"></div>
   </nav>
 </template>
 <style scoped>
-.hamburger-button{
+.hamburger-button {
   display: block;
   border: none;
   background: none;
@@ -83,7 +81,9 @@ onUnmounted(() => {
   color: var(--color-text);
 }
 
-
+.nav {
+  margin: 20px 0;
+}
 
 .showMenu {
   display: none;
@@ -97,7 +97,9 @@ onUnmounted(() => {
   .nav {
     max-width: 1280px;
     height: 70px;
-    margin-inline: auto;
+
+    margin: 20px;
+
 
     display: flex;
     justify-content: space-between;
