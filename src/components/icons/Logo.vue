@@ -1,20 +1,10 @@
 <script setup>
-defineProps({
-  width: {
-    type: Number,
-    required: true
-  },
-  height: {
-    type: Number,
-    required: true
-  }
-})
+
 </script>
 
 <template>
   <svg
-    :width=" width "
-    :height="height "
+
     viewBox="0 0 100 51"
     fill="currentColor"
     xmlns="http://www.w3.org/2000/svg"
@@ -42,14 +32,9 @@ defineProps({
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
-
 svg {
-  width: 5rem;
-  height: 5rem;
+  width: 80px;
+  height: 80px;
 
 }
 

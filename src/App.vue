@@ -1,43 +1,29 @@
 <script setup>
-import Logo from './components/icons/Logo.vue'
+import Navbar from './components/Navbar.vue'
 </script>
 
 <template>
-  <header>
-    <nav>
-      <ul>
-        <li class="logo"><Logo /></li>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Sobre mim</a></li>
-        <li><a href="#">Habilidades</a></li>
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Serviços</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <div class="">
-      <HelloWorld msg="You did it!" />
-    </div>
-    <TheWelcome />
-  </main>
+  <div class="wrapper">
+    <header class="header">
+      <Navbar />
+    </header>
+    <main>
+    </main>
+  </div>
 </template>
 
 <style scoped>
-@media (min-width: 1024px) {
- 
-  nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header {
+  background-color: var(--color-background);
+  padding-inline: 46px;
+  width: 100vw;
 
-    font-size: 1rem;
-  }
+  opacity: 0.8;
+}
 
-  nav ul li {
-    list-style: none;
-    margin: auto 1rem;
+@media (max-width: 768px) {
+  .header {
+    height: 100vh;
   }
 }
 </style>
